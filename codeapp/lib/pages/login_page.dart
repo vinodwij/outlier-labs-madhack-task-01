@@ -59,15 +59,14 @@ class _LoginPageState extends State<LoginPage> {
                 child: Text('Login'),
               ),
               SizedBox(height: 20.0),
-              Center(
-                TextButton(
-                  onPressed: () => Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (context) => SignupPage()),
-                  ),
-                  child: Text('Or Sign In with'),
+              TextButton(
+                onPressed: () => Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => SignupPage()),
                 ),
+                child: Text('Or Sign In with'),
               ),
+
               Row(
                 children: <Widget>[
                   Expanded(
